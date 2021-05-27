@@ -1,0 +1,379 @@
+/*
+GERAL
+*/
++
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    color: #001826;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+}
+
+.botao {
+    color: #f1f1f1;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #008aff;
+    font-size: .9em;
+    border-radius: 10px;
+}
+
+.botao:hover {
+    box-shadow: 0 0 5px 1px rgba(255, 255, 255, 0.69);
+}
+
+.botao:active {
+    background-color: #00467d;
+}
+
+/*
+NAVEGAÇÃO
+*/
+
+nav {
+
+    top: 0;
+    z-index: 9900;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #001826;
+
+}
+
+nav > .btn_nav {
+    color: #f1f1f1;
+    font-weight: 700;
+    font-size: 28px;
+    font-family: Pacifico, serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+}
+
+nav ul li .btn_nav {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.btn_nav:hover {
+    color: white;
+    text-shadow: 0 0 8px #008aff, 0 0 8px #008aff;
+}
+
+#logoimage {
+    width: 45px;
+    display: flex;
+}
+
+#copy {
+    font-size: 10px;
+}
+
+/*
+CABEÇALHO
+*/
+
+header {
+    background-size: cover;
+    background: rgba(0, 24, 38, 0.70) no-repeat center;
+    color: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5em;
+}
+
+header p {
+
+}
+
+.wrap {
+    height: 100%;
+    position: relative;
+}
+
+.wrap p {
+    margin-bottom: 2em;
+    max-width: 700px;
+    font-size: 25px;
+}
+
+.wrap > .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.wrap > .bg-video > video {
+    height: 100% px;
+    width: auto;
+}
+
+
+/*
+SOBRE
+*/
+
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #001826;
+    color: #f1f1f1;
+}
+
+#home p {
+    margin-bottom: 2.5em;
+    padding-right: 50px;
+    padding-left: 50px;
+    max-width: 1000px;
+}
+
+#home .botao {
+    background-color: #f1f1f1;
+    color: #4d4d4d;
+}
+
+/*
+SERVIÇOS
+*/
+
+#servicos {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#servicos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/*
+PORTFOLIO
+*/
+#aplicativo-main {
+    background: #002d44;
+    padding: 30px;
+}
+
+#portfolio {
+    margin: 0 auto 30px;
+    max-width: 935px;
+    width: 100%;
+    justify-content: center;
+    background: #002d44;
+}
+
+#title-portifolo {
+    font-size: 30px;
+    padding: 20px 30px 30px 20px;
+    text-align: center;
+    flex-direction: row;
+    color: white;
+}
+
+#stickers {
+    display: inline-grid;
+    grid-template-rows:300px 300px;
+    grid-template-columns: 300px 300px;
+    grid-gap: 10px;
+    width: 100%;
+}
+
+.sticker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 3em;
+    width: 100%;
+    box-shadow:  0 2px 5px #008aff;
+}
+
+.sticker:hover {
+    top:-5px;
+    transition: all .2s ease-in-out;
+    box-shadow:  0 0 8px #008aff, 2px 5px 8px #008aff;
+}
+
+.sticker img {
+    min-height: 92%;
+    max-height: 92%;
+    max-width: 92%;
+    min-width: 92%;
+}
+
+/*
+CONTATO
+*/
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/*
+FOOTER
+*/
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #00121c;
+    color: #f1f1f1;
+}
+
+/*
+MEDIA QUERIES
+*/
+
+@media screen and (min-width: 856px) {
+    /*
+    NAVEGAÇÃO
+    */
+    nav {
+        position: relative;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    /*
+    CABEÇALHO
+    */
+    header {
+        height: 600px;
+        justify-content: center;
+    }
+
+    .wrap > .bg-video > video {
+        height: auto;
+        width: 100%;
+    }
+
+    /*
+    SOBRE
+    */
+    #home {
+        height: 250px;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    /*
+    SERVIÇOS
+    */
+    #servicos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #servicos h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    #servicos div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+    /*
+    PORTFOLIO
+    */
+
+    #stickers {
+        display: inline-grid;
+        grid-template-rows:300px 300px 300px;
+        grid-template-columns: 300px 300px 300px;
+        grid-gap: 10px;
+        width: 100%;
+    }
+
+    #portfolio h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #portfolio img {
+        width: 33.3333333333%;
+    }
+
+    /*
+    CONTATO
+    */
+    #contato {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #contato h2,
+    #contato p {
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
