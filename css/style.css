@@ -330,7 +330,7 @@ APLICATIVO
 CONTATO
 */
 
-#caontato-header {
+#contato-header {
     display: flex;
     flex-direction: column;
     height: 300px;
@@ -344,7 +344,7 @@ CONTATO
     background-size: cover;
 }
 
-#caontato-header p {
+#contato-header p {
     margin-bottom: 2.5em;
     padding-right: 50px;
     padding-left: 50px;
