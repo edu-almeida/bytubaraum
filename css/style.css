@@ -179,6 +179,219 @@ HOME
 }
 
 
+/*
+HOME
+*/
 
+#caontato-header {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #001826;
+    color: #f1f1f1;
+    background-image: url("../images/contato-backrground.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#caontato-header p {
+    margin-bottom: 2.5em;
+    padding-right: 50px;
+    padding-left: 50px;
+    max-width: 1000px;
+}
+
+#contato-descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #001826;
+    color: #f1f1f1;
+}
+
+#contato-descricao p {
+    margin-bottom: 2.5em;
+    padding-right: 50px;
+    padding-left: 50px;
+    max-width: 1000px;
+}
+
+#grid-formulario {
+    clear: both;
+    position: relative;
+    table-layout: fixed;
+    display: table;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    background-image: none;
+    border: 0 solid #CCCCCC;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+#formulario {
+    box-sizing: border-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 50px 0 10px 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#formulario > .formulario-colunas {
+    box-sizing: border-box;
+    font-size: 0;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    position: relative;
+    -webkit-flex: 0 0 auto;
+    flex: 0 0 auto;
+    background-color: transparent;
+    background-image: none;
+    border: 0 solid #FFFFFF;
+    flex-basis: 50%;
+    max-width: 50%;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    -webkit-align-content: flex-start;
+    -webkit-align-self: stretch;
+    -webkit-align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    align-self: stretch;
+    align-items: flex-start;
+    -webkit-justify-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#formulario-botaoEnviar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 42px;
+    z-index: 7;
+    text-align: center;
+    border: 1px solid #008aff;
+    background-color: #008aff;
+    background-image: none;
+    color: #fff;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 13px;
+    padding: 0;
+    -webkit-appearance: none;
+    margin-bottom: 30px;
+}
+
+#formulario-botaoEnviar:hover {
+    background-color: #fff;
+    background-image: none;
+    color: #008aff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16);
+    cursor: pointer;
+}
+
+#formulario-div-textfield {
+    clear: both;
+    position: relative;
+    table-layout: fixed;
+    display: table;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.39);
+    background-image: none;
+    border: 0 solid #CCCCCC;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.formulario-textfield {
+    border: 1px solid #E1E1E1;
+    background-color: #FFFFFF;
+    background-image: none;
+    color: #777777;
+    font-style: normal;
+    font-size: 16px;
+    box-sizing: border-box;
+    line-height: 24px;
+    padding: 8px 8px 8px 8px;
+    margin: 0 0 15px 0;
+    text-align: left;
+}
+
+#formulario-div-checkbox {
+    position: relative;
+}
+
+#formulario-div-checkbox label {
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    padding: 0;
+}
+
+#formulario-div-checkbox label::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+}
+
+#formulario-div-checkbox label::after {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: 0;
+    padding: 0;
+    text-align: center;
+    line-height: 20px;
+}
+
+#formulario-div-checkbox input[type='checkbox']:checked + label::after {
+    content: " ";
+    background: url('data:image/svg+xml,%3csvg%20height%3d%2220%22%20width%3d%2220%22%20version%3d%221.1%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%3cg%20style%3d%22fill:%23FFFFFF%22%20transform%3d%22scale%280.0112%29%22%3e%0d%0a%3cpath%20transform%3d%22rotate%28180%29%20scale%28%2d1%2c1%29%20translate%280%2c%2d1536%29%22%20d%3d%22M1671%20970q0%20%2d40%20%2d28%20%2d68l%2d724%20%2d724l%2d136%20%2d136q%2d28%20%2d28%20%2d68%20%2d28t%2d68%2028l%2d136%20136l%2d362%20362q%2d28%2028%20%2d28%2068t28%2068l136%20136q28%2028%2068%2028t68%20%2d28l294%20%2d295l656%20657q28%2028%2068%2028t68%20%2d28l136%20%2d136q28%20%2d28%2028%20%2d68z%22/%3e%3c/g%3e%3c/svg%3e') no-repeat center center;
+    background-size: 80% 80%
+}
+
+#formulario-div-checkbox input[type='checkbox']:checked + label::before {
+    background-color: #008aff;
+    background-image: none;
+    border-color: #008aff;
+}
+
+#formulario-div-checkbox-info {
+    display: inline-block;
+    width: 75%;
+    padding-top: -20px;
+    position: center;
+}
 
 
