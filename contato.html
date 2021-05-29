@@ -1,10 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Contato</title>
-</head>
-<body>
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <a href="index.html" id="logo" rel="home">
+        <img alt="" id="logoimage" src="images/logo/home.png" />
+      </a>
+      <ul>
+        <li><a class="btn_nav" href="index.html">HOME</a></li>
+        <li><a class="btn_nav" href="stream.html">STREAM</a></li>
+        <li><a class="btn_nav" href="aplicativo.html">APLICATIVO</a></li>
+        <li><a class="btn_nav" href="contato.html">CONTATO</a></li>
+      </ul>
+    </nav>
 
-</body>
+    <header id="caontato-header">
+      <div class="caontato-header-desc">
+        <h1>By Tubaraum</h1>
+        <p>
+          Nunc sit amet augue nec tellus pharetra hendrerit a rutrum risus. Ut
+          elementum imperdiet odio ut commodo. Cras imperdiet orci enim, non
+          suscipit augue venenatis a. Cras eu dapibus ligula, a aliquet lectus.
+          Proin tristique vulputate blandit. In aliquet odio sit amet odio porta
+          vulputate. Proin non magna pharetra, aliquam erat a, pretium magna.
+          Proin consectetur arcu interdum magna feugiat convallis. Nunc tempor
+          mollis feugiat. Integer luctus efficitur laoreet.
+        </p>
+      </div>
+    </header>
+
+    <div id="grid-formulario">
+      <div>
+        <h2 style="margin-top: 30px">Nos envie uma mensagem</h2>
+      </div>
+      <form
+        action="mailto:yourname@yourdomain.com"
+        enctype="text/plain"
+        id="formulario"
+        method="post"
+        name="LayoutGrid6"
+      >
+        <div class="formulario-colunas">
+          <input
+            class="formulario-textfield"
+            data--100-bottom="transform:translate(0%,0px);"
+            data-bottom-top="transform:translate(200%,0px);"
+            name="name"
+            placeholder="Nome"
+            spellcheck="false"
+            style="display: block; width: 100%; height: 42px; z-index: 0"
+            type="text"
+            value=""
+          />
+          <input
+            class="formulario-textfield"
+            data--100-bottom="transform:translate(0%,0px);"
+            data-bottom-top="transform:translate(200%,0px);"
+            name="email"
+            placeholder="E-mail"
+            spellcheck="false"
+            style="display: block; width: 100%; height: 42px; z-index: 1"
+            type="text"
+            value=""
+          />
+          <input
+            class="formulario-textfield"
+            data--100-bottom="transform:translate(0%,0px);"
+            data-bottom-top="transform:translate(200%,0px);"
+            name="email"
+            placeholder="Assunto"
+            spellcheck="false"
+            style="display: block; width: 100%; height: 42px; z-index: 1"
+            type="text"
+            value=""
+          />
+        </div>
+        <div class="formulario-colunas">
+          <div id="formulario-div-textfield">
+            <textarea
+              autocomplete="off"
+              class="formulario-textfield"
+              cols="42"
+              data--100-bottom="transform:translate(0%,0px);"
+              data-bottom-top="transform:translate(200%,0px);"
+              name="TextArea1"
+              placeholder="Mensagem"
+              rows="3"
+              spellcheck="false"
+              style="display: block; width: 100%; height: 99px; z-index: 5"
+            ></textarea>
+          </div>
+          <div
+            id="formulario-div-checkbox"
+            style="display: inline-block; width: 20px; height: 20px; z-index: 3"
+          >
+            <input
+              checked
+              id="checkbox"
+              name=""
+              style="display: inline-block"
+              type="checkbox"
+              value="on"
+            /><label for="checkbox"></label>
+          </div>
+          <div id="formulario-div-checkbox-info">
+            <span style="color: #000000; font-size: 15px"
+              >Deseja receber noticais e novidades?</span
+            >
+          </div>
+        </div>
+      </form>
+      <div id="formulario-div-botaoEnviar">
+        <input
+          data--100-bottom="transform:translate(0%,0px);"
+          data-bottom-top="transform:translate(400%,0px);"
+          id="formulario-botaoEnviar"
+          name=""
+          style=""
+          type="submit"
+          value="ENVIAR"
+        />
+      </div>
+    </div>
+
+    <div id="contato-descricao">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris in
+        placerat orci. Nunc aliquam eros ac leo rutrum dictum. Integer sit amet
+        iaculis diam, eget varius tortor. Class aptent taciti sociosqu ad litora
+        torquent per conubia nostra, per inceptos himenaeos. Duis sit amet
+        laoreet magna, molestie rutrum arcu. Cras id sem et sapien bibendum
+        luctus quis in leo. Pellentesque habitant morbi tristique senectus et
+        netus et malesuada fames ac turpis egestas. In volutpat suscipit enim,
+        vitae varius eros laoreet imperdiet. Duis malesuada ac tellus sit amet
+        semper. Aliquam eleifend sed dui ut mollis. Nam fermentum sagittis
+        ipsum, ut porttitor nisl laoreet et. Nullam auctor sapien sed mattis
+        imperdiet. Sed eget augue iaculis, elementum est ut, sagittis nibh. Nunc
+        in posuere libero. Sed id laoreet libero, non suscipit purus. Integer
+        enim leo, rhoncus sit amet ligula sit amet, feugiat fermentum metus.
+      </p>
+    </div>
+
+  </body>
 </html>
