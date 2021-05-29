@@ -541,4 +541,105 @@ CONTATO
     position: center;
 }
 
+/*
+    MEDIA QUERIES
+*/
+@media screen and (min-width: 856px) {
+    /*
+    NAVEGAÇÃO
+    */
+    nav {
+        position: relative;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav ul {
+        flex-direction: row;
+        width: 70%;
+    }
+
+    /*
+    CABEÇALHO
+    */
+    header {
+        height: 600px;
+        justify-content: center;
+    }
+
+    .wrap > .bg-video > video {
+        height: auto;
+        width: 100%;
+    }
+
+    /*
+    SOBRE
+    */
+    #home {
+        height: 250px;
+        justify-content: center;
+        min-height: 250px;
+    }
+
+    /*
+    SERVIÇOS
+    */
+    #servicos {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    #servicos h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    #servicos div {
+        flex-grow: 1;
+        flex-basis: 150px;
+        padding: 0 10px;
+    }
+
+    /*
+    PORTFOLIO
+    */
+    #stickers {
+        display: inline-grid;
+        grid-template-rows:300px 300px 300px;
+        grid-template-columns: 300px 300px 300px;
+        grid-gap: 10px;
+        width: 100%;
+    }
+
+    #aplicativo h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #aplicativo img {
+        width: 33.3333333333%;
+    }
+
+    /*
+    CONTATO
+    */
+    #contato h2,
+    #contato p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    #formulario > .formulario-colunas {
+        -webkit-flex-basis: 100% !important;
+        flex-basis: 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+
+
 
