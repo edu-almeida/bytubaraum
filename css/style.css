@@ -178,9 +178,77 @@ HOME
     color: #4d4d4d;
 }
 
+/*
+APLICATIVO
+*/
+#aplicativo-header {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #001826;
+    color: #f1f1f1;
+    background-image: url("../images/portifolio-header.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#aplicativo-main {
+    background: #002d44;
+    padding: 30px;
+}
+
+#aplicativo {
+    margin: 0 auto 30px;
+    max-width: 935px;
+    width: 100%;
+    justify-content: center;
+    background: #002d44;
+}
+
+#title-aplicativo {
+    font-size: 20px;
+    padding: 20px 30px 30px 20px;
+    text-align: center;
+    flex-direction: row;
+    color: white;
+}
+
+#stickers {
+    display: inline-grid;
+    grid-template-rows:300px 300px;
+    grid-template-columns: 300px 300px;
+    grid-gap: 10px;
+    width: 100%;
+}
+
+.sticker {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    font-size: 3em;
+    width: 100%;
+    box-shadow: 0 2px 5px #008aff;
+}
+
+.sticker:hover {
+    top: -5px;
+    transition: all .2s ease-in-out;
+    box-shadow: 0 0 8px #008aff, 2px 5px 8px #008aff;
+}
+
+.sticker img {
+    min-height: 92%;
+    max-height: 92%;
+    max-width: 92%;
+    min-width: 92%;
+}
 
 /*
-HOME
+CONTATO
 */
 
 #caontato-header {
